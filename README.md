@@ -7,7 +7,7 @@
 Зайдіть у папку проєкту
 у файлі settings.py Знайдіть INSTALLED_APPS
 Додайте в кінці списку
- 'main',
+ 'engine.notes',
 Введіть у консоль python3 manage.py makemigrations
 та введіть python3 manage.py migrate
 Зрібіть свій акаунт
@@ -17,6 +17,6 @@
 Знайдіть “from django.urls import path”
 Замініть на “from django.urls import path , include”
 Знайдіть “urlpatterns”
-І в список додайте “    path('', include('main.urls')),”
+І в список додайте “    path('', include('engine.notes.urls')),”
 Насолоджуйтеся роботою BEngine!
 
